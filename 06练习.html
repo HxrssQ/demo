@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			//1.一个新入职，月工资为2000元的员工，每年涨当年工资5%，20年后的月工资是多少？
+			var s = 2000;
+			for(var i= 0;i<19;i++){
+				s=s*(1+0.05);
+				console.log(s);
+			}
+			
+			//2.山上有一口缸可以装50升水，现在有15升水。老和尚叫小和尚下山挑水，每次可以挑5升。问：小和尚要挑几次水才可以把水缸挑满？通过编程解决这个问题。
+			var s = 50 ;
+			var b = 15;
+			console.log((50-15)/5);
+			
+			//3.打印100–200之间所有能被3或者7整除的数
+			for(var i=100;i<=200;i++){
+				if(i%3==0 || i%7==0){
+					document.write(i+"<br />");
+				}
+			}
+			
+			//4.计算10的阶乘 
+			var s = 1;
+			for(var i=1;i<=10;i++){
+				s*=i;
+			}
+			console.log(s);
+			
+			//5.计算1+3+5+...+99的和
+			var s = 0 ;
+			for(var i=0;i<=100;i++){
+				if(i%2!=0){
+					s+=i;
+				}
+			}
+			console.log(s);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
